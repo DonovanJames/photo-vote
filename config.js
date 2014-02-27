@@ -23,6 +23,6 @@ module.exports = function(app){
 //	Make public folder available to the world
 	app.use(express.static(__dirname + '/public'));
 
-//	
+//
 	app.use(express.urlencode());
 }
