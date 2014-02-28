@@ -9,7 +9,7 @@ module.exports = function(app){
     console.log('Configurations set')
 //	Register and configure the handlebar engine
 	app.engine('html', handlebars({
-			defaultLayout: 'html',
+			defaultLayout: 'main',
 			extname: '.html',
 			layoutDir: __dirname + '/views/layouts'
 		}));

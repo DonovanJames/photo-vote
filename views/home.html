@@ -1,25 +1,25 @@
 <nav>
     <a class="active" href="./">Game</a>
-    <a href="./scope">Standings</a>
+    <a href="./scope">Scope</a>
 </nav>
 
-{{#if photo}}
+{{#if image}}
 
-<img src="image/{{image.name}}" width="530" height="420" alt="Images" />
+<img src="images/{{image.name}}" width="530" alt="Images" />
 
 <div class="button-holder">
-    <form action="./win" method="post">
+    <form action="./wins" method="post">
         <input type="hidden" name="image" value="{{image.name}}" />
-        <input type="submit" value="Cute!" />
+        <input type="submit" value="win" />
     </form>
-    <form action="./lose" method="post">
+    <form action="./loses" method="post">
         <input type="hidden" name="image" value="{{image.name}}" />
-        <input type="submit" value="Not Cute!" />
+        <input type="submit" value="lose" />
     </form>
 </div>
 
 {{else}}
 
-<h3>No more photos to vote on! Check out the <a href="./scope">standings</a>.</h3>
+<h3>No more photos to vote on! Check out the <a href="./scope">scope</a>.</h3>
 
 {{/if}}
