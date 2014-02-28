@@ -10,5 +10,5 @@ require('./config.js')(app);
 require('./routes.js')(app);
 
 // establish connection
-app.listen(8080);
-console.log('App running on port 8080');
+app.listen(8888);
+console.log('App running on port 8888');
