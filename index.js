@@ -6,8 +6,8 @@ var express = require('express');
 var app = express();
 
 // include file dependencies
-require('./config.js');
-require('./routes.je');
+require('./config.js')(app);
+require('./routes.js')(app);
 
 // establish connection
 app.listen(8080);

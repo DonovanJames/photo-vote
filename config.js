@@ -2,11 +2,11 @@
 
 // Include the handlebars object in the app
 var handlebars = require('express3-handlebars'),
-    express = requires('express');
+    express = require('express');
 
 // Inclusion function for configuring main app
 module.exports = function(app){
-
+    console.log('Configurations set')
 //	Register and configure the handlebar engine
 	app.engine('html', handlebars({
 			defaultLayout: 'html',
@@ -24,5 +24,5 @@ module.exports = function(app){
 	app.use(express.static(__dirname + '/public'));
 
 //
-	app.use(express.urlencode());
+	app.use(express.urlencoded());
 }

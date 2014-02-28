@@ -1,0 +1,22 @@
+<nav>
+    <a href="./">Game</a>
+    <a class="active" href="./scope">Standings</a>
+</nav>
+
+{{#if scope}}
+
+<ul>
+
+    {{#each scope}}
+
+    <li>
+        <img src="image/{{name}}" alt="Image thumbnail" />
+        <p class="up">{{this.wins}}</p>
+        <p class="down">{{this.loses}}</p>
+    </li>
+
+    {{/each}}
+
+</ul>
+
+{{/if}}
